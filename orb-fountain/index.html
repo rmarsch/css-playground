@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orb Fountain</title>
+	<meta charset="UTF-8" />
+	
+	<style type="text/css">
+  * { font-family: Verdana, Arial, sans-serif; }
+  body { background-color: #000; cursor: default; }
+  h1 { font-size: 15pt; }
+  p { font-size: 10pt; }
+
+  div.box {
+    position: absolute;
+    bottom: 0px;
+    display: inline-block;
+  }
+/*
+  div.box:hover {
+    animation: pillar 5s 1;
+    -webkit-animation: pillar 5s 1;
+    border-radius: 50px;
+  }
+*/
+  div.box:hover span.box {
+    animation: none;
+    -webkit-animation: none;
+  }
+
+  span.box { 
+    display: inline-block;
+    background-color: #110;
+    transition: all 5s;
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 10px #700 inset;
+    border-radius: 50px;
+    animation: glowing 1.8s infinite;
+    -webkit-animation: glowing 1.8s infinite;
+  }
+
+  span.box:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 50px #00f inset;   
+    margin-bottom: 700px;
+    transition: all 0.01s;
+    animation: none;
+    -webkit-animation: none;
+  }
+
+  @keyframes pillar {
+    0% { box-shadow: 0 0 100px #006 inset;}
+    85% { box-shadow: 0 0 100px #600 inset;}
+    100% { box-shadow: none;}
+  }
+
+  @-webkit-keyframes pillar {
+    0% { box-shadow: 0 0 100px #006 inset;}
+    85% { box-shadow: 0 0 100px #600 inset;}
+    100% { box-shadow: none;}
+  }
+
+  @keyframes glowing {
+   0% { background-color: #110; bow-shadow: 0px 0px 10px #700 inset; }
+   50% { background-color: #1d1000; bow-shadow: 0px 0px 50px #900 inset;}
+   100% { background-color: #110; bow-shadow: 0px 0px 10px #700 inset; }
+ }
+
+ @-webkit-keyframes glowing {
+   0% { background-color: #110; bow-shadow: 0px 0px 10px #700 inset; }
+   50% { background-color: #1d1000; bow-shadow: 0px 0px 50px #900 inset;}
+   100% { background-color: #110; bow-shadow: 0px 0px 10px #700 inset; }
+ }
+ 
+ </style>
+</head>
+
+<body>
+  <div class="box" style="left:0px"><span class="box"></span></div>
+  <div class="box" style="left: 102px"><span class="box"></span></div>
+  <div class="box" style="left: 204px"><span class="box"></span></div>
+  <div class="box" style="left: 306px"><span class="box"></span></div>
+  <div class="box" style="left: 408px"><span class="box"></span></div>
+  <div class="box" style="left: 510px"><span class="box"></span></div>
+  <div class="box" style="left: 612px"><span class="box"></span></div>
+  <div class="box" style="left: 714px;"><span class="box"></span></div>
+  <div class="box" style="left: 816px;"><span class="box"></span></div>
+  <div class="box" style="left: 918px;"><span class="box"></span></div>
+  <div class="box" style="left: 1020px;"><span class="box"></span></div>
+  <div class="box" style="left: 1122px;"><span class="box"></span></div>
+  <div class="box" style="left: 1224px;"><span class="box"></span></div>
+  <div class="box" style="left: 1326px;"><span class="box"></span></div>
+</body>
+</html>
